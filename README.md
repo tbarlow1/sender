@@ -1,0 +1,2 @@
+# sender
+Basic AMQ sender
