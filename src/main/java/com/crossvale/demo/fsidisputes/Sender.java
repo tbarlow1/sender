@@ -1,4 +1,4 @@
-package com.gpte.redhat;
+package com.crossvale.demo.fsidisputes;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -64,7 +64,6 @@ public class Sender {
                 Thread.sleep(1000);
             } catch (Exception exp) {
                 System.out.println("Caught exception, sleeping for a bit.");
-                exp.printStackTrace(System.out);
                 Thread.sleep(5000);
             }
         }
@@ -73,9 +72,12 @@ public class Sender {
     private static class MyExceptionListener implements ExceptionListener {
 
 		public void onException(JMSException exception) {
-			System.out.println("Connection ExceptionListener fired, exiting.");
-            exception.printStackTrace(System.out);
-            System.exit(1);
+			System.out.println("Connection ExceptionListener fired, sleeping some.");
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+
+			}
 			
 		}
 
