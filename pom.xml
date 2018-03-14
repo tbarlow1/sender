@@ -52,6 +52,7 @@
 							<goal>single</goal>
 						</goals>
 						<configuration>
+							<appendAssemblyId>false</appendAssemblyId>
 							<archive>
 								<manifest>
 									<mainClass>com.crossvale.demo.fsidisputes.Sender</mainClass>
