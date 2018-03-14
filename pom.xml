@@ -57,7 +57,7 @@
 									<mainClass>com.crossvale.demo.fsidisputes.Sender</mainClass>
 								</manifest>
 							</archive>
-							<descriptorRefs>
+					  	 	<descriptorRefs>
 								<descriptorRef>jar-with-dependencies</descriptorRef>
 							</descriptorRefs>
 						</configuration>
